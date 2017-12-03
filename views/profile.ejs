@@ -1,0 +1,24 @@
+<link rel="icon" href="/favicon.ico">
+<title><%= firstName %> <%= lastName %></title>
+<link rel="stylesheet" href="/stylesheets/profile.css">
+<aside class="profile-card" style="padding-bottom:50px">
+    <header>
+        <a href="/images/user.png"><img src="/images/user.png" class="hoverZoomLink"></a>
+        <h1><%= firstName %> <%= lastName %></h1>
+    </header>
+    <div class="profile-bio">
+        <p><strong>Email : </strong><span><%= email %></span></p>
+        <p><strong>Mobile : </strong><span><%= mobile %></span></p>
+        <p><strong>Course : </strong><span><%= course %></span></p>
+        <p><strong>Branch : </strong><span><%= branch %></span></p>
+        <p><strong>DOB: </strong><span><%= dob %></span></p>
+        <br>
+        <a href="/cardsinput">
+            <button>Add Cards</button>
+        </a>
+        <br><br><br>
+        <a href="/">
+            <img height="50" src="/images/home.ico" />
+        </a>
+    </div>
+</aside>

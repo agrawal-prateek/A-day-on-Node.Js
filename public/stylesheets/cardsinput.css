@@ -1,0 +1,41 @@
+body {
+    background: url("/images/background5.png") fixed no-repeat;
+    background-size: cover;
+}
+
+h5 {
+    font-weight: 400;
+}
+
+.container {
+    border-top: 10px solid #A0C1DA;
+    margin-top: 10%;
+    width: 800px;
+    height: inherit;
+    margin-bottom: 50px;
+    transition: box-shadow 0.5s;
+}
+.container:hover{
+    box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.submit-btn{
+    background: rgb(32, 148, 243);
+}
+.submit-btn:hover{
+    background-color: rgb(0,200,232);
+}
+
+.tabs .indicator {
+    background-color: #e0f2f1;
+    height: 60px;
+    opacity: 0.3;
+}
+
+.form-container {
+    padding: 40px;
+    padding-top: 10px;
+}
+
+.confirmation-tabs-btn {
+    position: absolute;
+}

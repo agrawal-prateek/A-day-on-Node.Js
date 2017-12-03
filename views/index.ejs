@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First App</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/stylesheets/materialize.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<div class="container white z-depth-1">
+    <div id="register" class="col s12">
+        <form class="col s12" method="get" action="/profile" onsubmit="return validateForm()">
+            <div class="form-container">
+                <h3 class="light-blue-text">Welcome</h3>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input name="first_name" id="first_name" type="text" required>
+                        <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input name="last_name" id="last_name" type="text" required>
+                        <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="email" id="user_email" type="email" required>
+                        <label for="user_email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="course" type="text" name="course" required>
+                        <label for="course">Course</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="branch" type="text" name="branch" required>
+                        <label for="branch">Branch</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="dob" type="date" name="dob" required>
+                        <label for="dob"></label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="mobile" type="number" name="mobile" required>
+                        <label for="mobile">Mobile</label>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <div class="gender-male">
+                            <input class="with-gap" name="gender" value="male" type="radio" id="male" required/>
+                            <label for="male">Male</label>
+                        </div>
+                    </div>
+                    <div class="input-field col s6">
+                        <div class="gender-female">
+                            <input class="with-gap" name="gender" value="female" type="radio" id="female" required/>
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <br>
+                    <center>
+                        <button class="submit-btn btn waves-effect waves-light" type="submit" name="action">Submit</button>
+                    </center>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="/javascripts/jquery-2.1.1.min.js"></script>
+<script src="/javascripts/materialize.min.js"></script>
+<script>
+
+    function validateForm() {
+        if(!(($('#mobile').val()).length === 10)){
+            alert('mobile no should contain 10 digits');
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+</script>
+</body>
+</html>
